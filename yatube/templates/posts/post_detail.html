@@ -34,9 +34,9 @@
       </p>
       {% if user == post.author %}
         <div class="d-flex justify-content-end">
-          <button type="button" class="btn btn-primary" onclick = "location.href = {% url 'posts:post_edit' post.id %}"> 
+          <a class="btn btn-primary" href ="{% url 'posts:post_edit' post.id %}"> 
             Редактировать запись
-          </button>
+          </a>
         </div>
       {% endif %}
     </article>
